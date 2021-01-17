@@ -1,0 +1,78 @@
+.container-reasons {
+    background-color: $color6;
+    justify-content: center;
+    display: grid;
+    grid-column: 1;
+    grid-row: 5;
+    grid-column-gap: 100px;
+    grid-row-gap: 20px;
+}
+
+
+.title2 {
+    font-family: $title-font;
+    font-size: 24px;
+    text-align: center;
+}
+
+.reasons {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: $color2;
+    font-family: $text-font;
+    font-size: 20px;
+    width: 184px;
+    height: 45px;
+    border: none;
+    border-radius: 22.5px;
+    background-color: $color1;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.reasons:hover {
+    background-color: orange;
+    box-shadow: 0 8px 15px rgba(238, 65, 22, 0.4);
+}
+
+.articles {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media all and (min-width: 768px) {
+    .container-reasons {
+        grid-column: 3;
+        grid-row: 3;
+        grid-column-gap: 80px;
+    }
+
+    .title2 {
+        grid-column: span 3;
+    }
+
+    .reasons {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        grid-column: span 3;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .reasons {
+        grid-row: 3/4;
+    }
+
+    .title2 {
+        font-size: 32px;
+
+    }
+
+
+    .articles {
+        font-size: 20px;
+    }
+}
