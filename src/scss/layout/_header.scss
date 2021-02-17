@@ -1,98 +1,97 @@
 .header {
-    &_photo {
-        background-image: url(../images/cover.jpg);
-        height: 100%;
-        background-repeat: no-repeat;
-        width: 100%;
-        background-size: cover;
-    }
+  &_photo {
+    background-image: url(../images/cover.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+  }
 
-    &_menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #0271bc;
-        padding: 5px;
-        width: 44px;
-        height: 44px;
-        display: flex;
-    }
+  &_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0271bc;
+    padding: 5px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+  }
 
-    &_title {
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
-        color: $color2;
-        text-align: center;
-        width: 100%;
-        align-items: center;
-    }
+  &_title {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: $color2;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
 
-    &_anonymous {
-        font-family: $title-font;
-        font-size: 42px;
-        max-width: 290px
-    }
+  &_anonymous {
+    font-family: $title-font;
+    font-size: 42px;
+    max-width: 290px;
+  }
 
-    &_claim {
-        font-family: $text-font;
-        font-size: 16px;
-    }
+  &_claim {
+    font-family: $text-font;
+    font-size: 16px;
+  }
 
-    &_down {
-        background-color: $color2;
-        width: 45px;
-        height: 45px;
-        border-radius: 22.5px;
-        border: 2px solid orange;
-        justify-content: center;
-        display: inline-flex;
-        margin-bottom: 15px;
-
-    }
+  &_down {
+    background-color: $color2;
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: 2px solid orange;
+    justify-content: center;
+    display: inline-flex;
+    margin-bottom: 15px;
+  }
 }
 
 @media all and (min-width: 768px) {
-    .header_anonymous {
-        font-size: 80px;
-        max-width: 690px;
-    }
+  .header_anonymous {
+    font-size: 80px;
+    max-width: 690px;
+  }
 
-    .header_claim {
-        font-size: 24px;
-    }
+  .header_claim {
+    font-size: 24px;
+    margin-top: 20px;
+  }
 
-    .hero_photo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .hero_photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media all and (min-width: 1200px) {
-    .header_photo {
-        width: 100%;
-        height: 100%;
-    }
+  .header_photo {
+    width: 100%;
+    height: 100%;
+  }
 
-    .header_anonymous {
-        font-size: 100px;
-        max-width: 730px
-    }
+  .header_anonymous {
+    font-size: 100px;
+    max-width: 730px;
+    margin-bottom: 30px;
+  }
 
-    .hero_title {
-        background-color: $color1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+  .hero_title {
+    background-color: $color1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
-    }
-
-    .hero_anonymous {
-        color: $color2;
-
-    }
+  .hero_anonymous {
+    color: $color2;
+  }
 }
